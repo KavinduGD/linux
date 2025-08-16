@@ -24,21 +24,21 @@
 
 ### du - estimate file space usage
 
-###
+### tee - read from standard input and write to standard output and files
 
-###
+### sort
 
-###
+### uniq
 
-###
+### grep
 
-###
+### tr - translate or delete characters
 
-###
+### rev
 
-###
+### cut
 
-###
+### sed
 
 ###
 
