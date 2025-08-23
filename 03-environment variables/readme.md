@@ -14,6 +14,14 @@
   - using .bashrc or .bash_profile
   - using /etc/profile
 
+### override variable for a single process
+
+```bash
+  NAME=value1
+  NAME=value2 command
+  echo $NAME  #> value1
+```
+
 ### $USER
 
 - **USER is not created by the shell itself.**
