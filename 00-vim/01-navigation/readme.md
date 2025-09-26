@@ -14,8 +14,7 @@
 - `w` - jump forward to the start of the next word (punctuation counts as a separator.)
 - `W` - jump forward to the start of the next word (punctuation is ignored, only whitespace splits.)
 - `b` - jump backward to the start of a word
-- `B` - jump backward to the start of a word (punctuation does not count as a word)
-- `e` - jump forward to the end of a word
+- `B` - jump backward to the start of a word ( punctuation is ignored, only whitespace splits.)
 
 ## Line navigation
 
