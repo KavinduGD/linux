@@ -52,11 +52,10 @@ echo "Hello $var";
 - Character in IFS - **space, tab, newline**
 
   > touch file1 file2
-
   - This command will splitted in to 3 words - touch, file1, file2
   - First word is the command, and the rest are arguments to the command
 
-### Expansion ---->> Word Splitting ---
+### Expansion ---->> Word Splitting
 
 ## " Double Quotes " and Word Splitting
 

@@ -52,7 +52,9 @@
 - motion - the movement to apply the operation to (e.g., word, line, file)
 
 > e.g. `3dw` - delete 3 words
+
 > e.g. `d3w` - delete 3 words
+
 > e.g. `3d3w` - delete 3 words, 3 times
 
 ## Basic positions
