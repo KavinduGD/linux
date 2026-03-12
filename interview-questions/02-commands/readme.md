@@ -280,3 +280,38 @@ Schedules recurring tasks.
 ## 41. How do you check which distribution and version you are running?
 
 `cat /etc/os-release` or hostnamectl. To check the kernel version specifically, use `uname -r` or `uname -a`.
+
+## 42. How to check system's current IP address?
+
+`ip addr show` or `ifconfig` (older). `ip addr` is often used in modern systems.
+
+## 43. How to you manage services in Linux?
+
+`systemctl start|stop|restart|status [service]`
+
+## 44. How to check the size of a directory's content?
+
+`du -sh /path/to/directory`
+
+## 45. How to check the disk usage of a file?
+
+`du -h /path/to/file`
+
+## 46. How to check open ports on a Linux system?
+
+`netstat -tuln` or `ss -tuln` (modern alternative).
+
+## 47. How would you see CPU usage of a process?
+
+`top` or `htop` and look for the process. You can also use `ps aux | grep [process]` to see CPU usage in a snapshot.
+
+## 48. How to deal with mounts?
+
+- To see mounted filesystems: `mount` or `df -h`
+- To mount a filesystem: `mount /dev/sdX /mnt/point`
+- To unmount: `umount /mnt/point`
+
+## 49. How to lookup something you don't know?
+
+- Use `man [command]` to read the manual page.
+- Use `--help` flag for quick usage info: `[command] --help`

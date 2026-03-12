@@ -5,6 +5,7 @@
 In 1991, **Linus Torvalds**, a 21-year-old student at the University of Helsinki, became frustrated with the licensing and limitations of **MINIX** (a small Unix-like system used for teaching). On August 25, 1991, he posted a now-famous message to a Usenet newsgroup:
 
 - UNIX is a powerful, professional operating system created in the 1960s that set the architectural blueprint for modern computing but was often expensive and proprietary. MINIX was a smaller, simplified version developed later by a professor for teaching purposes, serving as the educational foundation that inspired Linus Torvalds to create Linux.
+- UNIX is a full Operating System, not just a kernel.
 
   > _"I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu) for 386(486) AT clones..."_
 
