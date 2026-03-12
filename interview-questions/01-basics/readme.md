@@ -165,3 +165,25 @@ A **daemon** is a background service that runs continuously with no direct user 
 ## 27. What is Kernel Panic?
 
 **Kernel panic** is a critical error in the kernel where the system cannot recover (equivalent to Windows Blue Screen).
+
+## 28. What is the difference between the Linux Kernel and a Linux Distribution?
+
+The Kernel is the core part of the OS that manages hardware (CPU, RAM, Disk). A Distribution (distro) is the Kernel plus a collection of software, a package manager, a desktop environment, and system utilities (like bash, ls, or systemd).
+
+## 29. What are the major "families" of Linux distributions?
+
+Most distros descend from three main "ancestors":
+
+- Debian-based: Ubuntu, Kali Linux, Linux Mint (Uses .deb packages).
+- Red Hat-based: RHEL, Fedora, CentOS, AlmaLinux (Uses .rpm packages).
+- Arch-based: Arch Linux, Manjaro (Uses pacman).
+
+## 30. What is a Package Manager?
+
+A tool that automates installing, upgrading, and removing software. Examples: apt (Debian/Ubuntu), yum/dnf (RHEL/CentOS), pacman (Arch), and zypper (SUSE).
+
+## 31. What is a zombie process?
+
+- A process that has completed execution but still has an entry in the process table. It is waiting for its parent process to read its exit status.
+- It is not consuming CPU or memory but can lead to resource leaks if too many accumulate.
+- We cannot kill a zombie process with `kill -9` because it is already dead. To remove it, we need to either signal the parent process to reap it or kill the parent process, which will cause the init system to adopt and reap the zombie.
