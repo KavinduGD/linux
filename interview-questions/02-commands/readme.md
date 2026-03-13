@@ -315,3 +315,7 @@ Schedules recurring tasks.
 
 - Use `man [command]` to read the manual page.
 - Use `--help` flag for quick usage info: `[command] --help`
+
+## 50. If a script has execute permissions (+x) but no read permissions (-r), why might it still fail to run?
+
+A script with execute permission (+x) but no read permission (-r) may fail to run because the interpreter (e.g., bash, python, or node) needs read access to the script file to load and execute its contents.
