@@ -2,11 +2,18 @@
 
 ### mkdir
 
-- `-p` : create parent directories as needed `mkdir -p /var/app/logs/nginx`
+`-p` : create parent directories as needed `mkdir -p /var/app/logs/nginx`
 
 ### touch - also update timestamp
 
+`touch filename`
+
 ### ls
+
+- `-l` : long listing format
+- `-a` : include hidden files
+- `-h` : human-readable file sizes
+- `-R` : recursive listing of subdirectories
 
 ### rm
 
@@ -17,8 +24,12 @@
 
 - `-r` : recursive copy
 - `-p` : preserve file attributes
+- `cp source destination`
 
 ### mv - also use for rename
+
+- `mv oldname newname`
+- `mv file1 file2 directory/` : move multiple files to a directory
 
 ### cat
 
@@ -62,6 +73,7 @@
 - `-r` : recursive search in directories
 - `-v` : exclude matching lines
 - `-n` : show line numbers
+- `grep 'pattern' filename`
 
 ### tr - translate or delete characters
 
@@ -71,6 +83,11 @@ echo "HELLO" | tr 'A-Z' 'a-z'
 ```
 
 ### rev
+
+```bash
+echo "hello" | rev
+# Output: olleh
+```
 
 ### cut
 
