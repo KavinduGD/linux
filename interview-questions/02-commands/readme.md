@@ -351,3 +351,7 @@ A script with execute permission (+x) but no read permission (-r) may fail to ru
 - ❌ Cannot create/delete/rename files inside
 - ✔ Can list files (if r)
 - ✔ Can access files (if x)
+
+## 54. How to see all recently used commands?
+
+`history`
