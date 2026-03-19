@@ -108,7 +108,7 @@ touch '$file_name b'
 ## Command Substitution
 
 - **😀 $(command) - treat the output of command as a string**
-- **😀 `command` - treat the output of command as a string** (old style, not recommended)
+- **😀 \`command\` - treat the output of command as a string** (old style, not recommended)
 
 > echo "Today is $(date)"
 
