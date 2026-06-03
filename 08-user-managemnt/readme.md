@@ -8,6 +8,28 @@
 
 ## Directory Permissions
 
+- Read (r) : allows you to list the contents of the directory.
+- Write (w) : allows you to create, delete, or rename files within the directory
+- Execute (x) : allows you to access files within the directory and traverse it.
+
+## Adding permissions
+
+- To add permissions, you can use the `chmod` command with the `+` operator.
+- To remove permissions, you can use the `chmod` command with the `-` operator.
+- Different ways denote user types: user (u), group (g), others (o), and all (a) when changing permissions.
+- Permission types: read (r), write (w), execute (x)
+
+## Chnge Ownership and Group
+
+- `chown` command is used to change the ownership of a file or directory.
+- `chgrp` command is used to change the group ownership of a file or directory.
+
+eg:
+
+- chown newowner:newgroup file.txt
+- chown newowner file.txt
+- chgrp newgroup file.txt
+
 ### what happen when a directory has no read permission (r)? `-wx`
 
 - Read permission allows you to see the list of files inside the directory.

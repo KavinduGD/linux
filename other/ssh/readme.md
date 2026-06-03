@@ -20,3 +20,14 @@
 - If the client produces the correct response, the server knows you hold the correct private key (without ever seeing it).
 
 - Connection established:If the check passes, authentication succeeds and the session starts.If not, the server denies access.
+
+### SSh hardening tips
+
+- Disable root login: Edit /etc/ssh/sshd_config and set PermitRootLogin no. This prevents direct root access.
+- Restrict using firewall: Only allow SSH from trusted IPs using security groups or iptables.
+  - sudo ufw allow from 203.0.113.10 to any port 22 proto tcp
+- use ec2 security groups to restrict access to port 22 to specific IPs or ranges.
+- Limit user access: Only allow specific users to SSH in by adding AllowUsers user1 user2 to sshd_config.
+- Prevent Empty Password: PermitEmptyPasswords no
+- Change default SSH port: Edit sshd_config and set Port 2222 (or any non-standard port) to reduce automated attacks.
+- Disable password authentication: Edit /etc/ssh/sshd_config and set PasswordAuthentication no. This forces key-based auth.
