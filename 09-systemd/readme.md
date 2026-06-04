@@ -25,4 +25,3 @@
 ## systemctl daemon-reload
 
 - After editing a unit file, we need to run `systemctl daemon-reload` to tell systemd to reload the unit files and apply our changes
--
